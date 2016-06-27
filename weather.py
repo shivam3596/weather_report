@@ -1,7 +1,7 @@
 import pyowm
 from Tkinter import *
 
-owm = pyowm.OWM('c5e2c043b62a81ff93258a9988d3c47d') 
+owm = pyowm.OWM('YOUR_KEY') 
 
 def printtext():
    global e
