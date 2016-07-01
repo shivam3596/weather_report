@@ -23,6 +23,7 @@ def printtext():
    temp = w.get_temperature('celsius')  
    values = wind.values()
    temps = temp.values()
+   rain_value = rain.values()
 
    #displaying output
    root = Tk()
@@ -33,7 +34,7 @@ def printtext():
    text.insert(INSERT, "Sunrise Time :" + str(sunrise) + "\n")
    text.insert(INSERT, "Sunset Time :" + str(sunset) + "\n")
    if(rain_check != 0):
-      text.insert(INSERT, "Rain volume :" + str(rain) + "\n")
+      text.insert(INSERT, "Rain volume :" + str(rain_value[0]) + "\n")
    text.insert(INSERT,"wind speed :" + str(values[0]) + "\n")
    text.insert(INSERT,"Humidity :" + str(humidity) + "\n")
    text.insert(INSERT,"MAX Temprature :" + str(temps[0]) + "\n")
